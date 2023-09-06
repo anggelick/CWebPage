@@ -28,7 +28,6 @@ $breakpoints: (
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    background: #F0EFE9;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -63,6 +62,11 @@ $breakpoints: (
             line-height: 5vw;
           }
     }
+
+    h3 {
+        font-size: 1.375em;
+        line-height: 2em;
+      }
 
     p{
         font-family: 'Inter', sans-serif;
@@ -228,6 +232,7 @@ header{
 
 
 .showcase{
+    background: #F0EFE9;
     .container{
         display: flex;
         flex-direction: space-between;
@@ -259,4 +264,130 @@ header{
         }
     }
 }
+.partners{
+    .partners-brands {
+        padding: 4.5em 0 5em 0;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto auto auto;
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+      }
+      .partners-model {
+        display: flex;
+        margin: auto;
+        padding: 5em 6.25em 7em;
+        max-width: 95em;
+        border: 1px solid #DAD9D3;
+}    .partners-model-left {
+    max-width: 28.75em;
+    text-align:left;
+    h5 {
+     color: #F94D1C;
+      font-size: 12px;
+      padding-bottom: 1em;
+      font-weight: 600;
+      text-align:left;
+    }
+    h2 {
+      font-size: 25px;
+      font-weight: 900;
+      padding-bottom: 1em;
+      text-align: left;
+    }
+  }
+  .partners-model-right {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 6em;
+    .partners-model-card {
+      padding: 2.5em 1.875em;
+      svg {
+        height: 2.5em;
+        width: 2.5em;
+        padding-bottom: 1.5em;
+      }
+      h3 {
+        font-size: 1.375em;
+        font-weight: 700;
+      }
+      
+    }
+  }
+  .partners-model-left{
+    .btn-yellow{
+        width:100%;
+    }
+  }
+}
+footer {
+    height: 32em;
+    background-color: #0E1021;
+    display: flex;
+    flex-direction: column;
+  
+    svg,
+    h3,
+    a,
+    p {
+      color: #666666;
+    }
+    .footer-links-container {
+      padding: 0 1em;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr auto;
+      grid-gap: 2em;
+      &::before{
+        display: none;
+    }
+    &::after{
+        display: none;
+    }
+  
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+          padding-right: 0em;
+        }
+        h3 {
+          padding-bottom: 1.5em;
+        }
+        a {
+          line-height: 2.5em;
+          text-decoration: none;
+          font-weight: 500;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .copy-right {
+      height: 5em;
+      border-top: #666666 0.0625em solid;
+      padding: 0 1em;
+      .copy-right-items {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        svg {
+          padding-right: 1em;
+          cursor: pointer;
+          &:last-child {
+            padding-right: 0em;
+          }
+          &:hover {
+            color: #f9d783;
+          }
+        }
+      }
+    }
+  }
 }
