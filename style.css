@@ -1,0 +1,160 @@
+#Crito-webpage {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background: #F0EFE9;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  color: #191919;
+}
+#Crito-webpage h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+  font-size: 9vw;
+  padding: 4vw;
+  padding-left: 0;
+  margin: 0;
+  line-height: 10vw;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Crito-webpage h1 {
+    font-size: 7vw;
+    padding: 2vw;
+    padding-bottom: 0;
+    padding-left: 0;
+    line-height: 8vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage h1 {
+    font-size: 6vw;
+    line-height: 6vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage h1 {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+}
+#Crito-webpage p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 2vw 5vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage p {
+    text-align: left;
+    padding: 2vw 0vw;
+  }
+}
+#Crito-webpage .btn-yellow {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+#Crito-webpage .btn-yellow i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+#Crito-webpage .btn-yellow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #ffffff;
+}
+#Crito-webpage header {
+  background-color: #F0EFE9;
+  padding: 16px;
+}
+#Crito-webpage .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+#Crito-webpage .container .menu-bars {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .container .menu-bars {
+    display: none;
+  }
+}
+#Crito-webpage .container .menu {
+  display: none;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .container .menu {
+    display: block;
+  }
+}
+#Crito-webpage .container .top-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DAD9D3;
+}
+#Crito-webpage .container .contact-information {
+  display: flex;
+}
+#Crito-webpage .container .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+#Crito-webpage .container .main-menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+#Crito-webpage .container .main-menu nav a.active {
+  font-weight: 600;
+}
+#Crito-webpage .container .main-menu nav a.active::after, #Crito-webpage .container .main-menu nav a:hover:after {
+  content: "";
+  font-weight: 500;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
+#Crito-webpage .container .content-box {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #DAD9D3;
+}
+#Crito-webpage .container .content-box i {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+#Crito-webpage .container .content-box.last {
+  border: none;
+}
+#Crito-webpage .container .social-media a {
+  color: #191919;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+#Crito-webpage .container .social-media a:hover {
+  color: #666666;
+}
