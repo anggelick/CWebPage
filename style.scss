@@ -40,26 +40,26 @@ $breakpoints: (
         text-align: center;
         font-family: 'DM Sans', sans-serif;
         font-weight: 800;
-        font-size: 9vw;
+        font-size: 8vw;
         padding: 4vw;
         padding-left: 0;
         margin: 0;
         line-height: 10vw;
         text-align: center;
         @include respond-from('sm'){
-            font-size: 7vw;
+            font-size: 5vw;
             padding: 2vw;
             padding-bottom: 0;
             padding-left: 0;
             line-height: 8vw;
           }
           @include respond-from('md'){
-            font-size: 6vw;
+            font-size: 4vw;
             line-height: 6vw;
             text-align: left;
           }
           @include respond-from('lg'){
-            font-size: 5vw;
+            font-size: 4vw;
             line-height: 5vw;
           }
     }
@@ -69,6 +69,10 @@ $breakpoints: (
         font-size: 15px;
         text-align: center;
         padding: 2vw 5vw;
+        text-align: center;
+        @include respond-from("sm"){
+            padding: 2vw 20vw;
+        }
         @include respond-from("md"){
             text-align: left;
             padding: 2vw 0vw;
@@ -80,7 +84,29 @@ $breakpoints: (
         border: 1px solid #F9D783;
         color: #191919;
         text-decoration: none; 
-        padding: 8px 25px;
+        padding: 15px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 25px;
+
+        i{
+            margin-left: 8px;
+            font-size: 0.9em;
+        }
+
+        &:hover {
+            background-color: #191919;
+            border: 1px solid #191919;
+            color: #ffffff;
+        }
+    }
+
+    .btn-transperant{
+        background-color: transparent;
+        border: 1px solid #191919;
+        color: #191919;
+        text-decoration: none; 
+        padding: 15px 30px;
         font-weight: 600;
         font-size: 16px;
         border-radius: 25px;
@@ -100,72 +126,77 @@ $breakpoints: (
 header{
     background-color: #F0EFE9;
     padding: 16px;
-}
-.container{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 70px;
-
-    .menu-bars{
-        font-size: 25px;
-        border: none;
-        background-color:transparent;
-        @include respond-from("md"){
-            display:none;
-        }
-    }
-
-    .menu{
-        display: none;
-        @include respond-from("md"){
-            display:block;
-        }
-    }
-    .top-menu{
+    .container{
         display:flex;
-        justify-content: space-between;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #DAD9D3;
-    }
-    .contact-information{
-        display:flex;
-    
-    }
-
-    .main-menu{
-        display:flex;
-        justify-content: space-between;
         align-items: center;
-        padding-top: 10px;
-
-        nav{
-            a{
-                display: inline-block;
-                color: #191919;
-                text-decoration: none;
-                margin-right: 35px;
-                position: relative;
-
-                &.active{
-                    font-weight: 600;
-                }
-                &.active::after,
-                    &:hover:after {
-                        content: '';
-                    font-weight: 500;
-                    position: absolute;
-                    height: 2px;
-                    width: 15px;
-                    background-color: #191919;
-                    left: 50%;
-                    bottom: -3px;
-                    transform: translate((calc(50% - 15px)));
-
+        justify-content: space-between;
+        gap: 70px;
+    
+        .menu-bars{
+            font-size: 25px;
+            border: none;
+            background-color:transparent;
+            @include respond-from("md"){
+                display:none;
+            }
+        }
+    
+        .menu{
+            display: none;
+            @include respond-from("md"){
+                display:block;
+            }
+        }
+        .top-menu{
+            display:flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #DAD9D3;
+        }
+        .contact-information{
+            display:flex;
+        
+        }
+    
+        .main-menu{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+    
+            nav{
+                a{
+                    display: inline-block;
+                    color: #191919;
+                    text-decoration: none;
+                    margin-right: 35px;
+                    position: relative;
+    
+                    &.active{
+                        font-weight: 600;
+                    }
+                    &.active::after,
+                        &:hover:after {
+                            content: '';
+                        font-weight: 500;
+                        position: absolute;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px)));
+    
+                    }
                 }
             }
         }
-    }
+        .btn-login{
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+}
+
 
     .content-box{
         padding-right: 30px;
@@ -196,5 +227,36 @@ header{
 }
 
 
-
+.showcase{
+    .container{
+        display: flex;
+        flex-direction: space-between;
+        align-items: center;
+        .content{
+            padding-top:40px;
+            padding-bottom: 40px;
+            text-align: center;
+            @include respond-from("md"){
+                text-align: left;
+            }
+            a{
+                margin-right: 0px;
+                display:block;
+                margin-bottom: 20px;
+                @include respond-from("md"){
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+    }
+    img{
+        display: none;
+        margin-right: -50px;
+        @include respond-from("md"){
+            display: block;
+        }
+    }
+}
 }
