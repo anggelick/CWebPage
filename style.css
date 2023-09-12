@@ -31,8 +31,8 @@
 }
 @media (min-width: 992px) {
   #Crito-webpage h1 {
-    font-size: 3vw;
-    line-height: 4vw;
+    font-size: 4vw;
+    line-height: 5vw;
     text-align: left;
   }
 }
@@ -48,6 +48,60 @@
     line-height: 70px;
   }
 }
+@media (min-width: 1920px) {
+  #Crito-webpage h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+#Crito-webpage h2 {
+  font-size: 25px;
+  font-weight: 900;
+  padding-bottom: 5vw;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #Crito-webpage h2 {
+    padding-bottom: 2vw;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage h2 {
+    padding-bottom: 2vw;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+#Crito-webpage h5 {
+  color: #F94D1C;
+  font-size: 12px;
+  padding-bottom: 1vw;
+  font-weight: 600;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #Crito-webpage h5 {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage h5 {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage h5 {
+    font-size: 15px;
+  }
+}
 #Crito-webpage p {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -57,7 +111,7 @@
 }
 @media (min-width: 768px) {
   #Crito-webpage p {
-    padding: 2vw 5vw;
+    padding: 2vw;
   }
 }
 @media (min-width: 992px) {
@@ -90,7 +144,7 @@
   color: #191919;
   text-decoration: none;
   padding: 15px 30px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   border-radius: 25px;
 }
@@ -102,13 +156,31 @@
   border: 1px solid #191919;
   color: #ffffff;
 }
+#Crito-webpage .btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+}
+#Crito-webpage .btn-black i {
+  margin-left: 8px;
+}
+#Crito-webpage .btn-black:hover {
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  color: #191919;
+}
 #Crito-webpage .btn-transperant {
-  background-color: transparent;
+  background-color: #ffffff;
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
   padding: 15px 30px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   border-radius: 25px;
 }
@@ -116,6 +188,24 @@
   margin-left: 8px;
 }
 #Crito-webpage .btn-transperant:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #ffffff;
+}
+#Crito-webpage .play-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+}
+#Crito-webpage .play-button i {
+  margin-left: 8px;
+}
+#Crito-webpage .play-button:hover {
   background-color: #191919;
   border: 1px solid #191919;
   color: #ffffff;
@@ -277,6 +367,21 @@
     margin: 2vw auto 2vw;
   }
 }
+@media (min-width: 992px) {
+  #Crito-webpage .showcase .container p {
+    padding: 3vw 0;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .showcase .container p {
+    padding: 2vw 0;
+  }
+}
+@media (min-width: 1600px) {
+  #Crito-webpage .showcase .container p {
+    padding: 1vw 0;
+  }
+}
 #Crito-webpage .showcase img {
   display: none;
   margin-right: -50px;
@@ -373,37 +478,6 @@
     text-align: left;
   }
 }
-#Crito-webpage .partnership .partnership-model-left h5 {
-  color: #F94D1C;
-  font-size: 12px;
-  padding-bottom: 1vw;
-  font-weight: 600;
-  text-align: left;
-}
-@media (min-width: 1200px) {
-  #Crito-webpage .partnership .partnership-model-left h5 {
-    font-size: 15px;
-  }
-}
-#Crito-webpage .partnership .partnership-model-left h2 {
-  font-size: 25px;
-  font-weight: 900;
-  padding-bottom: 5vw;
-  text-align: left;
-}
-@media (min-width: 992px) {
-  #Crito-webpage .partnership .partnership-model-left h2 {
-    padding-bottom: 2vw;
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-@media (min-width: 1200px) {
-  #Crito-webpage .partnership .partnership-model-left h2 {
-    font-size: 40px;
-    line-height: 45px;
-  }
-}
 @media (min-width: 992px) {
   #Crito-webpage .partnership .partnership-model-right {
     display: grid;
@@ -441,7 +515,7 @@
 }
 @media (min-width: 1200px) {
   #Crito-webpage .partnership .partnership-model-right .partnership-model-card h3 {
-    font-size: 1.2vw;
+    font-size: 16px;
   }
 }
 #Crito-webpage .partnership .partnership-model-mobile {
@@ -490,6 +564,339 @@
 @media (min-width: 1200px) {
   #Crito-webpage .partnership .partnership-model-left .btn-yellow {
     width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .container {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .container {
+    padding: 2vw 5vw;
+  }
+}
+#Crito-webpage .aboutcompany .container .aboutcompany-textbox {
+  background: lightblue;
+  padding: 5vw;
+  width: 80%;
+  z-index: 2;
+  margin-top: -25vw;
+  margin-left: 5vw;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox {
+    margin-top: -18vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox {
+    padding: 3vw;
+    margin-left: -6vw;
+    margin-top: -13vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox {
+    padding: 2vw;
+    margin-left: -6vw;
+    margin-top: -14vw;
+  }
+}
+#Crito-webpage .aboutcompany .container .aboutcompany-textbox h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox h3 {
+    font-size: 2.7vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox h3 {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox h3 {
+    font-size: 16px;
+  }
+}
+#Crito-webpage .aboutcompany .container .aboutcompany-textbox h3 .orange {
+  color: orange;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox h3 .orange {
+    font-size: 12px;
+  }
+}
+#Crito-webpage .aboutcompany .container .aboutcompany-textbox p {
+  font-style: italic;
+  padding-right: 15vw;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .container .aboutcompany-textbox p {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .container .aboutcompanypicture {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .container .aboutcompanyborder {
+    width: 50%;
+  }
+}
+#Crito-webpage .aboutcompany .picture {
+  z-index: 0;
+}
+#Crito-webpage .aboutcompany img {
+  width: 100%;
+}
+#Crito-webpage .aboutcompany .company-model-left {
+  padding: 5vw;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .company-model-left {
+    text-align: left;
+    padding: 2vw;
+  }
+}
+#Crito-webpage .aboutcompany .company-model-left p {
+  text-align: left;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .company-model-left p {
+    padding: 1vw 2vw;
+  }
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .company-model-left h2 {
+    text-align: left;
+    padding: 2vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .company-model-left h2 {
+    padding: 0 2vw;
+  }
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .company-model-left h5 {
+    text-align: left;
+    padding: 0 2vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .company-model-left h5 {
+    padding: 0 2vw;
+  }
+}
+#Crito-webpage .aboutcompany .company-model-left .button-group {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .aboutcompany .company-model-left .button-group {
+    padding: 0 2vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .company-model-left .button-group {
+    flex-direction: unset;
+    padding: 0 2vw;
+  }
+}
+#Crito-webpage .our-services {
+  background-color: #F0EFE9;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services {
+    padding-bottom: 5vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services {
+    padding-top: 75px;
+    padding-bottom: 15px;
+  }
+}
+#Crito-webpage .our-services h5, #Crito-webpage .our-services h2 {
+  margin: 0px 15px 0px 15px;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services .our-services-boxes {
+    display: flex;
+  }
+}
+#Crito-webpage .our-services h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .our-services h3 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services h3 {
+    font-size: 1.85vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services .box1, #Crito-webpage .our-services .box2, #Crito-webpage .our-services .box3, #Crito-webpage .our-services .box4 {
+    width: 25%;
+    padding: 3vw;
+    background: #fff;
+    margin: 0px 15px 0px 15px;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services .box1, #Crito-webpage .our-services .box2, #Crito-webpage .our-services .box3, #Crito-webpage .our-services .box4 {
+    padding: 2vw;
+  }
+}
+#Crito-webpage .our-services .box1 .round-arrow, #Crito-webpage .our-services .box2 .round-arrow, #Crito-webpage .our-services .box3 .round-arrow, #Crito-webpage .our-services .box4 .round-arrow {
+  text-align: right;
+}
+#Crito-webpage .our-services .box1 .fa-solid, #Crito-webpage .our-services .box2 .fa-solid, #Crito-webpage .our-services .box3 .fa-solid, #Crito-webpage .our-services .box4 .fa-solid {
+  font-size: 10vw;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .our-services .box1 .fa-solid, #Crito-webpage .our-services .box2 .fa-solid, #Crito-webpage .our-services .box3 .fa-solid, #Crito-webpage .our-services .box4 .fa-solid {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services .box1 .fa-solid, #Crito-webpage .our-services .box2 .fa-solid, #Crito-webpage .our-services .box3 .fa-solid, #Crito-webpage .our-services .box4 .fa-solid {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services .box1 .fa-solid, #Crito-webpage .our-services .box2 .fa-solid, #Crito-webpage .our-services .box3 .fa-solid, #Crito-webpage .our-services .box4 .fa-solid {
+    font-size: 45px;
+  }
+}
+#Crito-webpage .our-services .box2 {
+  background: #F9D783;
+}
+#Crito-webpage .our-services .center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vw;
+  padding-bottom: 0vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services .center-content {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+}
+#Crito-webpage .project-and-case .container .section-title {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .project-and-case .container .section-title {
+    padding-top: 80px;
+  }
+}
+#Crito-webpage .project-and-case .container .section-title h5 {
+  text-align: center;
+}
+#Crito-webpage .project-and-case .container .section-title h2 {
+  text-align: center;
+}
+#Crito-webpage .project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#Crito-webpage .project-and-case .container .project-and-cases .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+#Crito-webpage .project-and-case .container .project-and-cases .project img {
+  width: 100%;
+  height: auto;
+}
+#Crito-webpage .project-and-case .container .project-and-cases .project h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .project-and-case .container .project-and-cases .project h3 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .project-and-case .container .project-and-cases .project h3 {
+    font-size: 1.85vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .project-and-case .container .project-and-cases .project h3 {
+    font-size: 16px;
+  }
+}
+#Crito-webpage .project-and-case .container .project-and-cases .project .readmore {
+  font-family: "Inter", sans-serif;
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px;
+}
+#Crito-webpage .project-and-case .container .project-and-cases .project i {
+  margin-left: 3px;
+}
+#Crito-webpage .project-and-case .container .project-and-cases .project:hover .readmore {
+  text-decoration: underline;
+}
+#Crito-webpage .project-and-case .container .center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vw;
+  padding-bottom: 15vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .project-and-case .container .center-content {
+    padding-top: 7vw;
+    padding-bottom: 5vw;
   }
 }
 #Crito-webpage footer {

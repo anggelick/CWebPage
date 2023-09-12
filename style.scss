@@ -53,8 +53,8 @@ $breakpoints: (
             line-height: 7vw;
           }
           @include respond-from('md'){
-            font-size: 3vw;
-            line-height: 4vw;
+            font-size: 4vw;
+            line-height: 5vw;
             text-align: left;
           }
           @include respond-from('lg'){
@@ -65,7 +65,50 @@ $breakpoints: (
             font-size: 70px;
             line-height: 70px;
           }
+          @include respond-from('ret'){
+            font-size: 60px;
+            line-height: 70px;
+          }
     }
+
+    h2 {
+      font-size: 25px;
+      font-weight: 900;
+      padding-bottom: 5vw;
+      text-align: left;
+      @include respond-from("sm"){
+        padding-bottom: 2vw;
+        text-align: center;
+      }
+      @include respond-from("md"){
+        padding-bottom: 2vw;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: left;
+
+      }
+      @include respond-from("lg"){
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+
+    h5 {
+      color: #F94D1C;
+       font-size: 12px;
+       padding-bottom: 1vw;
+       font-weight: 600;
+       text-align:left;
+       @include respond-from("sm"){
+        text-align: center;
+       }
+       @include respond-from("md"){
+        text-align: left;
+       }
+       @include respond-from("lg"){
+         font-size: 15px;
+       }
+     }
 
     p{
         font-family: 'Inter', sans-serif;
@@ -74,7 +117,7 @@ $breakpoints: (
         padding: 2vw 0vw;
         text-align: center;
         @include respond-from("sm"){
-            padding: 2vw 5vw;
+            padding: 2vw;
         }
         @include respond-from("md"){
             text-align: left;
@@ -101,7 +144,7 @@ $breakpoints: (
         color: #191919;
         text-decoration: none; 
         padding: 15px 30px;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         border-radius: 25px;
 
@@ -116,13 +159,34 @@ $breakpoints: (
         }
     }
 
+    .btn-black{
+      background-color: #191919;
+      border: 1px solid #191919;
+      color: #ffffff;
+      text-decoration: none; 
+      padding: 15px 30px;
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 25px;
+
+      i{
+          margin-left: 8px;
+      }
+
+      &:hover {
+          background-color: #ffffff;
+          border: 1px solid #191919;
+          color: #191919;
+      }
+  }
+
     .btn-transperant{
-        background-color: transparent;
+        background-color: #ffffff;
         border: 1px solid #191919;
         color: #191919;
         text-decoration: none; 
         padding: 15px 30px;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         border-radius: 25px;
 
@@ -136,6 +200,27 @@ $breakpoints: (
             color: #ffffff;
         }
     }
+
+    .play-button{
+      background-color: transparent;
+      border: 1px solid transparent;
+      color: #191919;
+      text-decoration: none; 
+      padding: 15px 30px;
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 25px;
+
+      i{
+          margin-left: 8px;
+      }
+
+      &:hover {
+          background-color: #191919;
+          border: 1px solid #191919;
+          color: #ffffff;
+      }
+  }
 
 header{ 
     background-color: #F0EFE9;
@@ -290,6 +375,18 @@ header{
                 }
             }
         }
+
+        p{
+          @include respond-from("md"){
+            padding: 3vw 0;
+          }
+          @include respond-from("lg"){
+            padding: 2vw 0;
+          }
+          @include respond-from("xl"){
+            padding: 1vw 0;
+          }
+        }
         
         
     }
@@ -371,32 +468,6 @@ padding-top: 0;
   @include respond-from("md"){
     text-align:left;
   }
-    h5 {
-     color: #F94D1C;
-      font-size: 12px;
-      padding-bottom: 1vw;
-      font-weight: 600;
-      text-align:left;
-      @include respond-from("lg"){
-        font-size: 15px;
-      }
-    }
-    h2 {
-      font-size: 25px;
-      font-weight: 900;
-      padding-bottom: 5vw;
-      text-align: left;
-      @include respond-from("md"){
-        padding-bottom: 2vw;
-        font-size: 30px;
-        line-height: 40px;
-
-      }
-      @include respond-from("lg"){
-        font-size: 40px;
-        line-height: 45px;
-      }
-    }
   }
   .partnership-model-right {
     @include respond-from("md"){
@@ -425,7 +496,7 @@ padding-top: 0;
           font-size: 1.85vw;
         }
         @include respond-from("lg"){
-          font-size: 1.2vw;
+          font-size: 16px;
         }
       }
       
@@ -464,6 +535,289 @@ padding-top: 0;
         @include respond-from("lg"){
           width: 70%;
         }
+    }
+  }
+}
+.aboutcompany{
+  .container{
+    @include respond-from("sm"){
+      display: flex;
+    }
+    @include respond-from("md"){
+      padding: 2vw 5vw;
+    }
+  .aboutcompany-textbox{
+    background: lightblue;
+    padding: 5vw;
+    width: 80%;
+    z-index: 2;
+    margin-top: -25vw;
+    margin-left: 5vw;
+    position: relative;
+    @include respond-from("sm"){
+      margin-top: -18vw;
+    }
+    @include respond-from("md"){
+      padding: 3vw;
+      margin-left: -6vw;
+      margin-top: -13vw;
+    }
+    @include respond-from("lg"){
+      padding: 2vw;
+      margin-left: -6vw;
+      margin-top: -14vw;
+    }
+    h3{
+      font-size: 4vw;
+      font-weight: 700;
+      font-family: 'DM Sans', sans-serif;
+      text-align: left;
+      @include respond-from("sm"){
+        font-size: 2.7vw;
+      }
+      @include respond-from("md"){
+        font-size: 2vw;
+      }
+      @include respond-from("lg"){
+        font-size: 16px;
+      }
+      .orange{
+        color: orange;
+        @include respond-from("sm"){
+          font-size: 12px;
+        }
+      }
+    }
+    p{
+      font-style: italic;
+      padding-right: 15vw;
+      text-align: left;
+      @include respond-from("sm"){
+        padding: 0;
+      }
+    }
+  }
+  .aboutcompanypicture{
+    @include respond-from("sm"){
+      width: 50%;
+    }
+
+  }
+  .aboutcompanyborder{
+    @include respond-from("sm"){
+      width: 50%;
+    }
+
+  }
+}
+  .picture{
+    z-index: 0;
+  }
+  img{
+    width: 100%;
+  }
+
+  .company-model-left{
+    padding: 5vw;
+    @include respond-from("sm"){
+      text-align: left;
+      padding: 2vw;
+    }
+    p{
+      text-align: left;
+      @include respond-from("md"){
+        padding: 1vw 2vw;
+      }
+    }
+    h2{
+      @include respond-from("sm"){
+        text-align: left;
+        padding: 2vw;
+      }
+      @include respond-from("md"){
+        padding: 0 2vw;
+      }
+    }
+    h5{
+      @include respond-from("sm"){
+        text-align: left;
+        padding: 0 2vw;
+      }
+      @include respond-from("md"){
+        padding: 0 2vw;
+      }
+    }
+    .button-group{
+      display: flex;
+      flex-direction: column;
+      @include respond-from("sm"){
+        padding: 0 2vw;
+      }
+      @include respond-from("md"){
+        flex-direction: unset;
+        padding: 0 2vw;
+      }
+    }
+  }
+}
+.our-services{
+  background-color: #F0EFE9;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  @include respond-from("md"){
+    padding-bottom: 5vw;
+  }
+  @include respond-from("lg"){
+    padding-top: 75px;
+    padding-bottom: 15px;
+  }
+  h5, h2{
+    margin: 0px 15px 0px 15px;
+  }
+  .our-services-boxes{
+    @include respond-from("md"){
+    display: flex;
+    }
+  }
+  h3 {
+    font-size: 4vw;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    @include respond-from("sm"){
+      font-size: 3vw;
+    }
+    @include respond-from("md"){
+      font-size: 1.85vw;
+      text-align: left;
+    }
+    @include respond-from("lg"){
+      font-size: 16px;
+    }
+  }
+  .box1,.box2,.box3,.box4{
+    @include respond-from("md"){
+    width: 25%;
+    padding: 3vw;
+    background: #fff;
+    margin: 0px 15px 0px 15px;
+    }
+    @include respond-from("lg"){
+      padding: 2vw;
+    }
+    .round-arrow{
+      text-align: right;
+    }
+    .fa-solid{
+      font-size: 10vw;
+      @include respond-from("sm"){
+        font-size: 5vw;
+      }
+      @include respond-from("md"){
+        font-size: 3vw;
+      }
+      @include respond-from("lg"){
+        font-size: 45px;
+      }
+    }
+  }
+  .box2{
+    background: #F9D783;
+  }
+  .center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw;
+    padding-bottom: 0vw;
+    @include respond-from("md"){
+      padding-top: 5vw;
+      padding-bottom: 5vw;
+    }
+  }
+}
+.project-and-case{
+  .container{
+    .section-title{
+      padding-top: 50px;
+      padding-bottom: 20px;
+      @include respond-from("sm"){
+        padding-top: 80px;
+      }
+     h5{
+      text-align: center;
+     }
+     h2{
+      text-align: center;
+     }
+    }
+    .project-and-cases{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      @include respond-from("sm"){
+        grid-template-columns: 1fr 1fr;
+      }
+      .project{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        color: #191919;
+        text-decoration: none;
+        img{
+          width: 100%;
+          height: auto;
+        }
+
+        h3 {
+          font-size: 4vw;
+          font-weight: 700;
+          padding-top: 35px;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #DAD9D3;
+          text-align: center;
+          @include respond-from("sm"){
+            font-size: 3vw;
+          }
+          @include respond-from("md"){
+            font-size: 1.85vw;
+            text-align: left;
+          }
+          @include respond-from("lg"){
+            font-size: 16px;
+          }
+        }
+        .readmore{
+          font-family: 'Inter', sans-serif;
+          display: block;
+          text-align: right;
+          font-size: 14px;
+          font-weight: 500;
+          color: #191919;
+          text-decoration: none;
+          padding: 15px;
+        }
+
+        i{
+          margin-left: 3px;
+        }
+        &:hover .readmore{
+          text-decoration: underline;
+        }
+        
+      }
+    }
+    .center-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10vw;
+      padding-bottom: 15vw;
+      @include respond-from("md"){
+        padding-top: 7vw;
+        padding-bottom: 5vw;
+      }
     }
   }
 }
