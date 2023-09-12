@@ -810,6 +810,86 @@
     padding-bottom: 5vw;
   }
 }
+#Crito-webpage .why-choose-us {
+  padding-top: 10vw;
+  padding-bottom: 0vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .why-choose-us {
+    padding-bottom: 5vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .why-choose-us {
+    padding-top: 75px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .why-choose-us .flex-section {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .why-choose-us .flex-section .picture {
+    width: 50%;
+  }
+}
+#Crito-webpage .why-choose-us .flex-section .picture .picture-background {
+  background-color: #F0EFE9;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .why-choose-us .flex-section .picture .picture-background {
+    background-color: #F0EFE9;
+    padding: 15vw;
+    margin-left: -10vw;
+    margin-top: -30vw;
+    margin-right: -9vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .why-choose-us .flex-section .picture .picture-background {
+    margin-left: -10vw;
+    margin-top: -35vw;
+    margin-right: -12vw;
+  }
+}
+@media (min-width: 1600px) {
+  #Crito-webpage .why-choose-us .flex-section .picture .picture-background {
+    margin-left: -10vw;
+    margin-top: -22vw;
+    margin-right: -25vw;
+    padding: 10vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .why-choose-us .four-things {
+    width: 50%;
+  }
+}
+#Crito-webpage .why-choose-us .four-things .one-thing h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .why-choose-us .four-things .one-thing h3 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .why-choose-us .four-things .one-thing h3 {
+    font-size: 1.85vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .why-choose-us .four-things .one-thing h3 {
+    font-size: 16px;
+  }
+}
 #Crito-webpage .project-and-case .container .section-title {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -897,6 +977,60 @@
   #Crito-webpage .project-and-case .container .center-content {
     padding-top: 7vw;
     padding-bottom: 5vw;
+  }
+}
+#Crito-webpage .signup-section {
+  background-color: #F0EFE9;
+}
+#Crito-webpage .signup-section .signupform {
+  padding: 5vw;
+}
+#Crito-webpage .signup-section .signupform input[type=text], #Crito-webpage .signup-section .signupform .input[type=submit] {
+  width: 100%;
+  padding: 15px 30px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #F0EFE9;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+#Crito-webpage .signup-section .signupform input[type=checkbox] {
+  margin-top: 16px;
+}
+#Crito-webpage .signup-section .signupform input[type=submit] {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+}
+#Crito-webpage .signup-section .signupform input[type=submit] i {
+  margin-left: 8px;
+}
+#Crito-webpage .signup-section .signupform input[type=submit]:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #ffffff;
+}
+#Crito-webpage .signup-section .signupform input[type=submit]:hover {
+  opacity: 0.8;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .signup-section .signup-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+#Crito-webpage .signup-section .signup-container .button-container {
+  padding-bottom: 5vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .signup-section .signup-container .button-container {
+    padding-bottom: 0;
   }
 }
 #Crito-webpage footer {
@@ -1032,4 +1166,7 @@
 }
 #Crito-webpage footer .footer-social-media a:hover {
   color: #666666;
+}
+#Crito-webpage .letsconnect {
+  background-color: #F0EFE9;
 }
