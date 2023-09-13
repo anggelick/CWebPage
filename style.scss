@@ -337,6 +337,7 @@ header{
 
 .showcase{
     background: #F0EFE9;
+    position: relative;
     .container{
         display: flex;
         flex-direction: column;
@@ -401,6 +402,32 @@ header{
           margin-right: -50px;
         }
     }
+    .header-picture2{
+      position: absolute;
+  top: 15%;
+  left: 0;
+  @include respond-from("sm"){
+    top: 10%;
+  }
+  @include respond-from("md"){
+    top: 82%;
+  }
+  @include respond-from("lg"){
+    top: 81%;
+  }
+  @include respond-from("xl"){
+    top: 72%;
+  }
+  img{
+    width:70%;
+    @include respond-from("md"){
+      width: 80%;
+    }
+    @include respond-from("lg"){
+      width:100%;
+    }
+  }
+    }
 }
 .partnership{
     .partnership-brands {
@@ -444,8 +471,8 @@ header{
     }
     .partnershipborder{
       @include respond-from("md"){
-padding: 5vw;
-padding-top: 0;
+      padding: 5vw;
+      padding-top: 0;
       }
     }
       .partnership-model {
@@ -459,9 +486,6 @@ padding-top: 0;
           padding: 2vw;
           max-width: 95vw;
           border: 1px solid #DAD9D3;
-        }
-        @include respond-from("lg"){
-
         }
 }    
 .partnership-model-left {
@@ -601,11 +625,17 @@ padding-top: 0;
     @include respond-from("sm"){
       width: 50%;
     }
+    @include respond-from("md"){
+      width: 40%;
+    }
 
   }
   .aboutcompanyborder{
     @include respond-from("sm"){
       width: 50%;
+    }
+    @include respond-from("md"){
+      width: 60%;
     }
 
   }
@@ -711,6 +741,7 @@ padding-top: 0;
     }
     .fa-solid{
       font-size: 10vw;
+      cursor: pointer;
       @include respond-from("sm"){
         font-size: 5vw;
       }
@@ -720,6 +751,9 @@ padding-top: 0;
       @include respond-from("lg"){
         font-size: 45px;
       }
+      &:hover{
+        color: #666666;
+    }
     }
   }
   .box2{
@@ -1069,5 +1103,204 @@ footer {
   }
   .letsconnect{
     background-color: #F0EFE9;
+    padding-top: 5vw;
+    padding-bottom: 15vw;
+    @include respond-from("md"){
+      padding-bottom: 5vw;
+    }
+    .header-picture{
+      position: absolute;
+  top: 15%;
+  left: 0;
+  @include respond-from("sm"){
+    top: 10%;
+  }
+  @include respond-from("md"){
+    top: 12%;
+  }
+  @include respond-from("lg"){
+    top: 16%;
+  }
+  @include respond-from("xl"){
+    top: 17%;
+  }
+  @include respond-from("ret"){
+    top: 19%;
+  }
+  img{
+    width:100%;
+  }
+    }
+        .header-picture2{
+      position: absolute;
+  top: 15%;
+  left: 0;
+  @include respond-from("sm"){
+    top: 10%;
+  }
+  @include respond-from("md"){
+    top: 17%;
+  }
+  @include respond-from("lg"){
+    top: 23%;
+  }
+  @include respond-from("xl"){
+    top: 24%;
+  }
+  @include respond-from("ret"){
+    top: 27%;
+  }
+  img{
+    width:100%;
+  }
+    }
+    .main-menu{
+      nav{
+        a{
+            display: inline-block;
+            color: #191919;
+            text-decoration: none;
+            margin-right: 35px;
+            position: relative;
+
+            &.active{
+                font-weight: 600;
+            }
+            &.active::after,
+                &:hover:after {
+                font-weight: 500;
+
+            }
+        }
+    }
+    }
+    .home-section{
+      h2{
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 800;
+      }
+      
+    }
+    
+  }
+  .our-services-contact{
+    background-color: #fff;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    @include respond-from("md"){
+      padding-bottom: 5vw;
+    }
+    @include respond-from("lg"){
+      padding-top: 75px;
+    }
+    h5, h2{
+      margin: 0px 15px 0px 15px;
+    }
+    .our-services-boxes{
+      @include respond-from("md"){
+      display: flex;
+      }
+    }
+    h3 {
+      font-size: 4vw;
+      font-weight: 700;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      text-align: center;
+      @include respond-from("sm"){
+        font-size: 3vw;
+      }
+      @include respond-from("md"){
+        font-size: 1.85vw;
+        text-align: left;
+      }
+      @include respond-from("lg"){
+        font-size: 16px;
+      }
+    }
+    .box1,.box2,.box3{
+      @include respond-from("md"){
+      width: 33%;
+      padding: 3vw;
+      background: #fff;
+      border: 1px solid #DAD9D3;
+      margin: 0px 15px 0px 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      }
+      @include respond-from("lg"){
+        padding: 2vw;
+      }
+      .round-arrow{
+        text-align: center;
+        @include respond-from("md"){
+        text-align: left;
+        }
+      }
+      .fa-solid{
+        font-size: 10vw;
+        @include respond-from("sm"){
+          font-size: 5vw;
+        }
+        @include respond-from("md"){
+          font-size: 3vw;
+        }
+        @include respond-from("lg"){
+          font-size: 45px;
+        }
+        
+      }
+    }
+  }
+  .contactform{
+    .container{
+      padding-bottom: 5vw;
+    .contact-wrapper{
+      padding: 5vw;
+      background-color: #F0EFE9;
+      text-align: center;
+      h2{
+        text-align: center;
+      }
+      .item.name_email{
+        display: flex;
+        flex-direction: column;
+      }
+      .item{
+        display: flex;
+        flex-direction: column;
+    }
+    .item textarea{
+      height: 100px;
+      resize: none;
+    }
+    .item input[type="text"],
+.item textarea{
+  width: 100%;
+  background: #fff;
+  border: 2px solid #fff;
+  color: #000;
+  padding: 0 0 15px 0;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.btn{
+  width: 100%;
+  padding-top: 2vw;
+.btn-yellow{
+  width: 100%;
+}
+}
+  }
+}
+  .signup-location{
+   img{
+    width: 100%;
+   }
+  }
   }
 }

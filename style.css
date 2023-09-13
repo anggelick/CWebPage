@@ -315,6 +315,7 @@
 }
 #Crito-webpage .showcase {
   background: #F0EFE9;
+  position: relative;
 }
 #Crito-webpage .showcase .container {
   display: flex;
@@ -395,6 +396,44 @@
 @media (min-width: 1200px) {
   #Crito-webpage .showcase img {
     margin-right: -50px;
+  }
+}
+#Crito-webpage .showcase .header-picture2 {
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .showcase .header-picture2 {
+    top: 10%;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .showcase .header-picture2 {
+    top: 82%;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .showcase .header-picture2 {
+    top: 81%;
+  }
+}
+@media (min-width: 1600px) {
+  #Crito-webpage .showcase .header-picture2 {
+    top: 72%;
+  }
+}
+#Crito-webpage .showcase .header-picture2 img {
+  width: 70%;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .showcase .header-picture2 img {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .showcase .header-picture2 img {
+    width: 100%;
   }
 }
 #Crito-webpage .partnership .partnership-brands {
@@ -648,9 +687,19 @@
     width: 50%;
   }
 }
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .container .aboutcompanypicture {
+    width: 40%;
+  }
+}
 @media (min-width: 768px) {
   #Crito-webpage .aboutcompany .container .aboutcompanyborder {
     width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .aboutcompany .container .aboutcompanyborder {
+    width: 60%;
   }
 }
 #Crito-webpage .aboutcompany .picture {
@@ -778,6 +827,7 @@
 }
 #Crito-webpage .our-services .box1 .fa-solid, #Crito-webpage .our-services .box2 .fa-solid, #Crito-webpage .our-services .box3 .fa-solid, #Crito-webpage .our-services .box4 .fa-solid {
   font-size: 10vw;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #Crito-webpage .our-services .box1 .fa-solid, #Crito-webpage .our-services .box2 .fa-solid, #Crito-webpage .our-services .box3 .fa-solid, #Crito-webpage .our-services .box4 .fa-solid {
@@ -793,6 +843,9 @@
   #Crito-webpage .our-services .box1 .fa-solid, #Crito-webpage .our-services .box2 .fa-solid, #Crito-webpage .our-services .box3 .fa-solid, #Crito-webpage .our-services .box4 .fa-solid {
     font-size: 45px;
   }
+}
+#Crito-webpage .our-services .box1 .fa-solid:hover, #Crito-webpage .our-services .box2 .fa-solid:hover, #Crito-webpage .our-services .box3 .fa-solid:hover, #Crito-webpage .our-services .box4 .fa-solid:hover {
+  color: #666666;
 }
 #Crito-webpage .our-services .box2 {
   background: #F9D783;
@@ -1169,4 +1222,229 @@
 }
 #Crito-webpage .letsconnect {
   background-color: #F0EFE9;
+  padding-top: 5vw;
+  padding-bottom: 15vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .letsconnect {
+    padding-bottom: 5vw;
+  }
+}
+#Crito-webpage .letsconnect .header-picture {
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .letsconnect .header-picture {
+    top: 10%;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .letsconnect .header-picture {
+    top: 12%;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .letsconnect .header-picture {
+    top: 16%;
+  }
+}
+@media (min-width: 1600px) {
+  #Crito-webpage .letsconnect .header-picture {
+    top: 17%;
+  }
+}
+@media (min-width: 1920px) {
+  #Crito-webpage .letsconnect .header-picture {
+    top: 19%;
+  }
+}
+#Crito-webpage .letsconnect .header-picture img {
+  width: 100%;
+}
+#Crito-webpage .letsconnect .header-picture2 {
+  position: absolute;
+  top: 15%;
+  left: 0;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .letsconnect .header-picture2 {
+    top: 10%;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .letsconnect .header-picture2 {
+    top: 17%;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .letsconnect .header-picture2 {
+    top: 23%;
+  }
+}
+@media (min-width: 1600px) {
+  #Crito-webpage .letsconnect .header-picture2 {
+    top: 24%;
+  }
+}
+@media (min-width: 1920px) {
+  #Crito-webpage .letsconnect .header-picture2 {
+    top: 27%;
+  }
+}
+#Crito-webpage .letsconnect .header-picture2 img {
+  width: 100%;
+}
+#Crito-webpage .letsconnect .main-menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+#Crito-webpage .letsconnect .main-menu nav a.active {
+  font-weight: 600;
+}
+#Crito-webpage .letsconnect .main-menu nav a.active::after, #Crito-webpage .letsconnect .main-menu nav a:hover:after {
+  font-weight: 500;
+}
+#Crito-webpage .letsconnect .home-section h2 {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+}
+#Crito-webpage .our-services-contact {
+  background-color: #fff;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services-contact {
+    padding-bottom: 5vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services-contact {
+    padding-top: 75px;
+  }
+}
+#Crito-webpage .our-services-contact h5, #Crito-webpage .our-services-contact h2 {
+  margin: 0px 15px 0px 15px;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services-contact .our-services-boxes {
+    display: flex;
+  }
+}
+#Crito-webpage .our-services-contact h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .our-services-contact h3 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services-contact h3 {
+    font-size: 1.85vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services-contact h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services-contact .box1, #Crito-webpage .our-services-contact .box2, #Crito-webpage .our-services-contact .box3 {
+    width: 33%;
+    padding: 3vw;
+    background: #fff;
+    border: 1px solid #DAD9D3;
+    margin: 0px 15px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services-contact .box1, #Crito-webpage .our-services-contact .box2, #Crito-webpage .our-services-contact .box3 {
+    padding: 2vw;
+  }
+}
+#Crito-webpage .our-services-contact .box1 .round-arrow, #Crito-webpage .our-services-contact .box2 .round-arrow, #Crito-webpage .our-services-contact .box3 .round-arrow {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services-contact .box1 .round-arrow, #Crito-webpage .our-services-contact .box2 .round-arrow, #Crito-webpage .our-services-contact .box3 .round-arrow {
+    text-align: left;
+  }
+}
+#Crito-webpage .our-services-contact .box1 .fa-solid, #Crito-webpage .our-services-contact .box2 .fa-solid, #Crito-webpage .our-services-contact .box3 .fa-solid {
+  font-size: 10vw;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .our-services-contact .box1 .fa-solid, #Crito-webpage .our-services-contact .box2 .fa-solid, #Crito-webpage .our-services-contact .box3 .fa-solid {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services-contact .box1 .fa-solid, #Crito-webpage .our-services-contact .box2 .fa-solid, #Crito-webpage .our-services-contact .box3 .fa-solid {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .our-services-contact .box1 .fa-solid, #Crito-webpage .our-services-contact .box2 .fa-solid, #Crito-webpage .our-services-contact .box3 .fa-solid {
+    font-size: 45px;
+  }
+}
+#Crito-webpage .contactform .container {
+  padding-bottom: 5vw;
+}
+#Crito-webpage .contactform .container .contact-wrapper {
+  padding: 5vw;
+  background-color: #F0EFE9;
+  text-align: center;
+}
+#Crito-webpage .contactform .container .contact-wrapper h2 {
+  text-align: center;
+}
+#Crito-webpage .contactform .container .contact-wrapper .item.name_email {
+  display: flex;
+  flex-direction: column;
+}
+#Crito-webpage .contactform .container .contact-wrapper .item {
+  display: flex;
+  flex-direction: column;
+}
+#Crito-webpage .contactform .container .contact-wrapper .item textarea {
+  height: 100px;
+  resize: none;
+}
+#Crito-webpage .contactform .container .contact-wrapper .item input[type=text],
+#Crito-webpage .contactform .container .contact-wrapper .item textarea {
+  width: 100%;
+  background: #fff;
+  border: 2px solid #fff;
+  color: #000;
+  padding: 0 0 15px 0;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+#Crito-webpage .contactform .container .contact-wrapper .btn {
+  width: 100%;
+  padding-top: 2vw;
+}
+#Crito-webpage .contactform .container .contact-wrapper .btn .btn-yellow {
+  width: 100%;
+}
+#Crito-webpage .contactform .signup-location img {
+  width: 100%;
 }
