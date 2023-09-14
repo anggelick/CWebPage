@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
 </head>
 <body>
+
     <article id="Crito-webpage">
         <header>
 <div class="container">
@@ -153,7 +155,39 @@
                 <h5>Our Services</h5>
                 <h2>We Provide The Best<br> Service For Consulting</h2>
               </div>
-              <div class="our-services-boxes">
+              <div class="our-services-boxes visible-xs visible-sm">
+                <div id=slideshowElement class="carousel" data-flickity="{ &quot;fullscreen&quot;: true,&quot;wrapAround&quot;: true }">
+                  <div class="gallery-cell">
+                <div class="box1">
+                  <h3>Business Advice</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+                  <div class="round-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
+                </div>
+                </div>
+                <div class="gallery-cell">
+                <div class="box2">
+                  <h3>Startup Business</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+                  <div class="round-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
+                </div>
+                </div>
+                <div class="gallery-cell">
+                <div class="box3">
+                  <h3>Financial Advice</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+                  <div class="round-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
+                </div>
+              </div>
+                <div class="gallery-cell">
+                <div class="box4">
+                  <h3>Risk Management</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+                  <div class="round-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
+                </div>
+                </div>
+              </div>
+              </div>
+              <div class="our-services-boxes hidden-xs hidden-sm">
                 <div class="box1">
                   <h3>Business Advice</h3>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
@@ -168,7 +202,7 @@
                   <h3>Financial Advice</h3>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                   <div class="round-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
-                </div>
+              </div>
                 <div class="box4">
                   <h3>Risk Management</h3>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
@@ -245,6 +279,150 @@
               </div>
             </div>
           </section>
+          <section class="team-members">
+            <div class="container">
+              <div class="experience">
+                <div class="flex-section">
+                <div class="text-section">
+                  <h5>Meet Our Team</h5>
+                  <h2>Experience Team Members</h2>
+                </div>
+                  <div class="center-content">
+                    <a class="btn-transperant2" href="projects.html">Browse Team <i class="fa-regular fa-arrow-up-right"></i></a>
+                  </div>
+                </div>
+                <div id=slideshowElement class="carousel visible-xs visible-sm" data-flickity="{ &quot;fullscreen&quot;: true,&quot;wrapAround&quot;: true }">
+                  <div class="gallery-cell">
+                    <div class="gallery-image">
+                      <img class="img-responsive" src="crito_team1_picture.jpg" alt="Chania">
+                      <h3>Kristine Palmer</h3>
+                      <p>Chef Operation Officer</p>
+                  </div>
+              </div>
+              <div class="gallery-cell">
+                <div class="gallery-image">
+                  <img class="img-responsive" src="crito_team2_picture.jpg" alt="Chania">
+                  <h3>Mark Aubri</h3>
+                  <p>Senior Consultant</p>
+              </div>
+          </div>
+          <div class="gallery-cell">
+            <div class="gallery-image">
+              <img class="img-responsive" src="crito_team3_picture.jpg" alt="Chania">
+              <h3>Kimberly Hansen</h3>
+              <p>Senior Consultant</p>
+          </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="gallery-image">
+          <img class="img-responsive" src="crito_team4_picture.jpg" alt="Chania">
+          <h3>Justin Willoman</h3>
+          <p>Senior Tech Consultant</p>
+      </div>
+  </div>
+            </div>
+            <div id=slideshowElement class="carousel hidden-xs hidden-sm" data-flickity="{ &quot;fullscreen&quot;: true,&quot;wrapAround&quot;: true }">
+              <div class="gallery-cell-dt">
+                <div class="gallery-image">
+                  <img class="img-responsive" src="crito_team1_picture.jpg" alt="Chania">
+                  <h3>Kristine Palmer</h3>
+                  <p>Chef Operation Officer</p>
+              </div>
+              <div class="gallery-image">
+                <img class="img-responsive" src="crito_team2_picture.jpg" alt="Chania">
+                <h3>Mark Aubri</h3>
+                <p>Senior Consultant</p>
+            </div>
+            <div class="gallery-image">
+              <img class="img-responsive" src="crito_team3_picture.jpg" alt="Chania">
+              <h3>Kimberly Hansen</h3>
+              <p>Senior Consultant</p>
+          </div>
+          <div class="gallery-image">
+            <img class="img-responsive" src="crito_team4_picture.jpg" alt="Chania">
+            <h3>Justin Willoman</h3>
+            <p>Senior Tech Consultant</p>
+        </div>
+          </div>
+          <div class="gallery-cell-dt">
+            <div class="gallery-image">
+              <img class="img-responsive" src="crito_team1_picture.jpg" alt="Chania">
+              <h3>Kristine Palmer</h3>
+              <p>Chef Operation Officer</p>
+          </div>
+          <div class="gallery-image">
+            <img class="img-responsive" src="crito_team2_picture.jpg" alt="Chania">
+            <h3>Mark Aubri</h3>
+            <p>Senior Consultant</p>
+        </div>
+        <div class="gallery-image">
+          <img class="img-responsive" src="crito_team3_picture.jpg" alt="Chania">
+          <h3>Kimberly Hansen</h3>
+          <p>Senior Consultant</p>
+      </div>
+      <div class="gallery-image">
+        <img class="img-responsive" src="crito_team4_picture.jpg" alt="Chania">
+        <h3>Justin Willoman</h3>
+        <p>Senior Tech Consultant</p>
+    </div>
+      </div>
+        </div>
+            </div>
+            <div class="section-box">
+              <div class="text-section">
+                <h5>Testimonial</h5>
+                <h2>What Our Client Says</h2>
+              </div>
+              <div class="our-services-boxes">
+                <div class="box1">
+                  <div class="star">
+                    <img class="img-responsive" src="crito_star_review.svg" alt="Chania">
+                  </div>
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."</p>
+                  <div class="flex-section">
+                    <div class="client">
+                      <img class="img-responsive" src="Crito_Cassandra_picture.svg" alt="Chania">
+                    </div>
+                  <div class="client">
+                  <h3>Cassandra Warren</h3>
+                  <p class="orange">Business Manager, Dorfus</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="box2">
+                  <div class="star">
+                    <img class="img-responsive" src="crito_star_review.svg" alt="Chania">
+                  </div>
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."</p>
+                  <div class="flex-section">
+                    <div class="client">
+                      <img class="img-responsive" src="Crito_Amanda_picture.svg" alt="Chania">
+                    </div>
+                  <div class="client">
+                  <h3>Amanda Tulling</h3>
+                  <p class="orange">Senior Developer, Square</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="box3">
+                  <div class="star">
+                    <img class="img-responsive" src="crito_star_review.svg" alt="Chania">
+                  </div>
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus."</p>
+                  <div class="flex-section">
+                    <div class="client">
+                      <img class="img-responsive" src="Crito_Jack_picture.svg" alt="Chania">
+                    </div>
+                  <div class="client">
+                  <h3>Jack McDogglas</h3>
+                  <p class="orange">Key Account Manager, Gobona</p>
+                  </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            </div>
+          </section>
           <section class="signup-section">
             <div class="container">
               <div class="signupform">
@@ -316,5 +494,7 @@
             </div>
           </footer>
         </article>
-
+</body>
+<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>

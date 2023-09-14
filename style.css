@@ -192,6 +192,24 @@
   border: 1px solid #191919;
   color: #ffffff;
 }
+#Crito-webpage .btn-transperant2 {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+}
+#Crito-webpage .btn-transperant2 i {
+  margin-left: 8px;
+}
+#Crito-webpage .btn-transperant2:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #ffffff;
+}
 #Crito-webpage .play-button {
   background-color: transparent;
   border: 1px solid transparent;
@@ -337,6 +355,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   #Crito-webpage .showcase .container .content {
@@ -781,10 +800,42 @@
 #Crito-webpage .our-services h5, #Crito-webpage .our-services h2 {
   margin: 0px 15px 0px 15px;
 }
+#Crito-webpage .our-services .our-services-boxes {
+  background: #fff;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .our-services .our-services-boxes {
+    background: none;
+  }
+}
 @media (min-width: 992px) {
   #Crito-webpage .our-services .our-services-boxes {
     display: flex;
   }
+}
+#Crito-webpage .our-services .our-services-boxes .gallery-cell {
+  width: 100%;
+  height: 400px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DAD9D3;
+  padding: 5vw;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .our-services .our-services-boxes .gallery-cell {
+    padding: 5vw 15vw;
+    background: #fff;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .our-services .our-services-boxes .gallery-cell {
+    display: none;
+  }
+}
+#Crito-webpage .our-services .our-services-boxes .flickity-button, #Crito-webpage .our-services .our-services-boxes .flickity-prev-next-button {
+  display: none;
 }
 #Crito-webpage .our-services h3 {
   font-size: 4vw;
@@ -847,15 +898,23 @@
 #Crito-webpage .our-services .box1 .fa-solid:hover, #Crito-webpage .our-services .box2 .fa-solid:hover, #Crito-webpage .our-services .box3 .fa-solid:hover, #Crito-webpage .our-services .box4 .fa-solid:hover {
   color: #666666;
 }
-#Crito-webpage .our-services .box2 {
-  background: #F9D783;
+@media (min-width: 768px) {
+  #Crito-webpage .our-services .box2 {
+    background: #F9D783;
+  }
 }
 #Crito-webpage .our-services .center-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5vw;
+  padding-top: 15vw;
   padding-bottom: 0vw;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .our-services .center-content {
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+  }
 }
 @media (min-width: 992px) {
   #Crito-webpage .our-services .center-content {
@@ -918,6 +977,14 @@
 @media (min-width: 992px) {
   #Crito-webpage .why-choose-us .four-things {
     width: 50%;
+  }
+}
+#Crito-webpage .why-choose-us .four-things .one-thing {
+  padding: 2vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .why-choose-us .four-things .one-thing {
+    padding: 0;
   }
 }
 #Crito-webpage .why-choose-us .four-things .one-thing h3 {
@@ -1031,6 +1098,229 @@
     padding-top: 7vw;
     padding-bottom: 5vw;
   }
+}
+#Crito-webpage .team-members {
+  padding-bottom: 10vw;
+  background-color: #F0D082;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members {
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+  }
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members .experience .text-section {
+    padding-bottom: 5vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .experience .text-section {
+    padding: 0;
+  }
+}
+#Crito-webpage .team-members .experience .carousel {
+  padding-top: 15vw;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members .experience .carousel {
+    padding-top: 5vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .experience .carousel {
+    padding-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .experience .flex-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+#Crito-webpage .team-members .gallery-cell {
+  width: 100%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0D082 !important;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members .gallery-cell {
+    padding: 5vw 15vw;
+    background: #fff;
+    padding-top: 2vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .gallery-cell {
+    display: none;
+  }
+}
+#Crito-webpage .team-members .gallery-cell .gallery-image {
+  padding: 5vw;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #F0D082;
+}
+#Crito-webpage .team-members .gallery-cell .gallery-image h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members .gallery-cell .gallery-image h3 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .gallery-cell .gallery-image h3 {
+    font-size: 1.85vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .team-members .gallery-cell .gallery-image h3 {
+    font-size: 16px;
+  }
+}
+#Crito-webpage .team-members .gallery-cell .gallery-image p {
+  padding: 0vw;
+  text-align: left;
+}
+#Crito-webpage .team-members .gallery-cell img {
+  width: 100%;
+}
+#Crito-webpage .team-members .gallery-cell-dt {
+  width: 100%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0D082;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .gallery-cell-dt {
+    padding: 5vw;
+    padding-top: 0;
+  }
+}
+#Crito-webpage .team-members .gallery-cell-dt .gallery-image {
+  background-color: #F0D082;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .gallery-cell-dt .gallery-image {
+    padding: 1vw;
+  }
+}
+#Crito-webpage .team-members .gallery-cell-dt .gallery-image h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members .gallery-cell-dt .gallery-image h3 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .gallery-cell-dt .gallery-image h3 {
+    font-size: 1.85vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .team-members .gallery-cell-dt .gallery-image h3 {
+    font-size: 16px;
+  }
+}
+#Crito-webpage .team-members .gallery-cell-dt .gallery-image p {
+  padding: 0vw;
+  text-align: left;
+}
+#Crito-webpage .team-members .gallery-cell-dt img {
+  width: 100%;
+}
+#Crito-webpage .team-members .carousel.is-fullscreen .gallery-cell-dt {
+  height: 100%;
+}
+#Crito-webpage .team-members .gallery-cell img {
+  display: block;
+  max-height: 100%;
+}
+#Crito-webpage .team-members .flickity-button, #Crito-webpage .team-members .flickity-prev-next-button {
+  display: none;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members .flickity-page-dots {
+    bottom: 20px;
+  }
+}
+#Crito-webpage .team-members .section-box {
+  padding: 5vw;
+  background: #fff;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .section-box .our-services-boxes {
+    display: flex;
+    justify-content: center;
+  }
+}
+#Crito-webpage .team-members .section-box .our-services-boxes p {
+  padding: 0;
+  text-align: left;
+}
+#Crito-webpage .team-members .section-box .our-services-boxes h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #Crito-webpage .team-members .section-box .our-services-boxes h3 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .section-box .our-services-boxes h3 {
+    font-size: 1.85vw;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #Crito-webpage .team-members .section-box .our-services-boxes h3 {
+    font-size: 16px;
+  }
+}
+#Crito-webpage .team-members .section-box .our-services-boxes .box1, #Crito-webpage .team-members .section-box .our-services-boxes .box2, #Crito-webpage .team-members .section-box .our-services-boxes .box3 {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .section-box .our-services-boxes .box1, #Crito-webpage .team-members .section-box .our-services-boxes .box2, #Crito-webpage .team-members .section-box .our-services-boxes .box3 {
+    width: 33%;
+  }
+}
+#Crito-webpage .team-members .section-box .our-services-boxes .star {
+  padding-bottom: 1vw;
+}
+@media (min-width: 992px) {
+  #Crito-webpage .team-members .flex-section {
+    display: flex;
+  }
+}
+#Crito-webpage .team-members .flex-section .client {
+  padding: 10px;
+}
+#Crito-webpage .team-members .flex-section .img {
+  width: 100%;
 }
 #Crito-webpage .signup-section {
   background-color: #F0EFE9;

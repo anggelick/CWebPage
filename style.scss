@@ -200,6 +200,27 @@ $breakpoints: (
             color: #ffffff;
         }
     }
+    
+    .btn-transperant2{
+      background-color: transparent;
+      border: 1px solid #191919;
+      color: #191919;
+      text-decoration: none; 
+      padding: 15px 30px;
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 25px;
+
+      i{
+          margin-left: 8px;
+      }
+
+      &:hover {
+          background-color: #191919;
+          border: 1px solid #191919;
+          color: #ffffff;
+      }
+  }
 
     .play-button{
       background-color: transparent;
@@ -353,6 +374,7 @@ header{
             padding-top:40px;
             padding-bottom: 40px;
             text-align: center;
+            z-index: 1;
             @include respond-from("md"){
                 text-align: left;
                 padding: 0;
@@ -705,9 +727,33 @@ header{
     margin: 0px 15px 0px 15px;
   }
   .our-services-boxes{
+    background: #fff;
+    @include respond-from("sm"){
+      background: none;
+    }
     @include respond-from("md"){
     display: flex;
     }
+    .gallery-cell{
+  width: 100%; 
+  height: 400px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DAD9D3;
+  padding: 5vw;
+  @include respond-from("sm"){
+    padding: 5vw 15vw;
+    background: #fff;
+  }
+  @include respond-from("md"){
+    display: none;
+  }
+}
+.flickity-button, .flickity-prev-next-button{
+  display: none;
+}
   }
   h3 {
     font-size: 4vw;
@@ -727,6 +773,7 @@ header{
     }
   }
   .box1,.box2,.box3,.box4{
+  
     @include respond-from("md"){
     width: 25%;
     padding: 3vw;
@@ -757,14 +804,20 @@ header{
     }
   }
   .box2{
+    @include respond-from("sm"){
     background: #F9D783;
+    }
   }
   .center-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5vw;
+    padding-top: 15vw;
     padding-bottom: 0vw;
+    @include respond-from("sm"){
+      padding-top: 10vw;
+      padding-bottom: 5vw;
+    }
     @include respond-from("md"){
       padding-top: 5vw;
       padding-bottom: 5vw;
@@ -817,6 +870,10 @@ header{
       width: 50%;
     }
     .one-thing{
+      padding: 2vw;
+      @include respond-from("md"){
+        padding: 0;
+      }
     h3 {
       font-size: 4vw;
       font-weight: 700;
@@ -920,6 +977,199 @@ header{
       }
     }
   }
+}
+.team-members{
+  padding-bottom: 10vw;
+  background-color: #F0D082;
+  @include respond-from("sm"){
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+  }
+  .experience{
+    .text-section{
+      @include respond-from("sm"){
+        padding-bottom: 5vw;
+      }
+      @include respond-from("md"){
+        padding: 0;
+      }
+    }
+    .carousel {
+      padding-top: 15vw;
+      @include respond-from("sm"){
+        padding-top: 5vw;
+      }
+      @include respond-from("md"){
+        padding-top: 0;
+      }
+    }
+    .flex-section{
+      @include respond-from("md"){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+      }
+    }
+  }
+  .gallery-cell{
+    width: 100%; 
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0D082 !important;
+    @include respond-from("sm"){
+      padding: 5vw 15vw;
+      background: #fff;
+      padding-top: 2vw;
+    }
+    @include respond-from("md"){
+      display: none;
+    }
+    .gallery-image{
+      padding: 5vw;
+      padding-bottom: 0;
+      padding-top:0;
+      background-color: #F0D082;
+      h3 {
+        font-size: 4vw;
+        font-weight: 700;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+        @include respond-from("sm"){
+          font-size: 3vw;
+        }
+        @include respond-from("md"){
+          font-size: 1.85vw;
+          text-align: left;
+        }
+        @include respond-from("lg"){
+          font-size: 16px;
+        }
+      }
+      p{
+        padding: 0vw;
+        text-align: left;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .gallery-cell-dt{
+    width: 100%; 
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0D082;
+    @include respond-from("md"){
+      padding: 5vw;
+      padding-top: 0;
+    }
+    .gallery-image{
+      background-color: #F0D082;
+@include respond-from("md"){
+  padding: 1vw;
+}
+      h3 {
+        font-size: 4vw;
+        font-weight: 700;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+        @include respond-from("sm"){
+          font-size: 3vw;
+        }
+        @include respond-from("md"){
+          font-size: 1.85vw;
+          text-align: left;
+        }
+        @include respond-from("lg"){
+          font-size: 16px;
+        }
+      }
+      p{
+        padding: 0vw;
+        text-align: left;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .carousel.is-fullscreen .gallery-cell-dt
+{
+  height: 100%;
+}
+
+.gallery-cell img
+{
+  display: block;
+  max-height: 100%;
+}
+  .flickity-button, .flickity-prev-next-button{
+    display: none;
+  }
+  .flickity-page-dots {
+    @include respond-from("sm"){
+    bottom: 20px;
+    }
+  }
+  .section-box{
+    padding: 5vw;
+    background: #fff;
+    .our-services-boxes{
+      @include respond-from("md"){
+        display: flex;
+        justify-content: center;
+      }
+      p{
+        padding: 0;
+        text-align: left;
+    }
+      h3 {
+        font-size: 4vw;
+        font-weight: 700;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+        @include respond-from("sm"){
+          font-size: 3vw;
+        }
+        @include respond-from("md"){
+          font-size: 1.85vw;
+          text-align: left;
+        }
+        @include respond-from("lg"){
+          font-size: 16px;
+        }
+      }
+      .box1, .box2, .box3{
+        width: 100%;
+        @include respond-from("md"){
+        width: 33%;
+        }
+      }
+      .star{
+        padding-bottom: 1vw;
+      }
+    }
+  }
+  .flex-section{
+    @include respond-from("md"){
+      display: flex;
+    }
+    .client{
+      padding: 10px;
+    }
+    .img{
+      width: 100%;
+    }
+  }
+
 }
 .signup-section{
   background-color: #F0EFE9;
