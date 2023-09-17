@@ -1,4 +1,3 @@
-
 $breakpoints: (
     'xs': 375px,
     'sp': 421px,
@@ -38,7 +37,7 @@ $breakpoints: (
         width: 100%;
         text-align: center;
         font-family: 'DM Sans', sans-serif;
-        font-weight: 800;
+        font-weight: 900;
         font-size: 8vw;
         padding: 4vw;
         padding-left: 0;
@@ -54,11 +53,11 @@ $breakpoints: (
           }
           @include respond-from('md'){
             font-size: 4vw;
-            line-height: 5vw;
+            line-height: 4vw;
             text-align: left;
           }
           @include respond-from('lg'){
-            font-size: 4vw;
+            font-size: 3.5vw;
             line-height: 5vw;
           }
           @include respond-from('xl'){
@@ -72,10 +71,12 @@ $breakpoints: (
     }
 
     h2 {
+      font-family: 'DM Sans', sans-serif;
       font-size: 25px;
       font-weight: 900;
       padding-bottom: 5vw;
       text-align: left;
+      margin-top: 0;
       @include respond-from("sm"){
         padding-bottom: 2vw;
         text-align: center;
@@ -83,14 +84,18 @@ $breakpoints: (
       @include respond-from("md"){
         padding-bottom: 2vw;
         font-size: 25px;
-        line-height: 40px;
+        line-height: 35px;
         text-align: left;
 
       }
       @include respond-from("lg"){
-        font-size: 35px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 40px;
       }
+    }
+
+    h3{
+      font-family: 'DM Sans', sans-serif;
     }
 
     h5 {
@@ -181,7 +186,7 @@ $breakpoints: (
   }
 
     .btn-transperant{
-        background-color: #ffffff;
+        background-color: transparent;
         border: 1px solid #191919;
         color: #191919;
         text-decoration: none; 
@@ -354,9 +359,7 @@ header{
         }
     }
 }
-
-
-.showcase{
+.crito-1{
     background: #F0EFE9;
     position: relative;
     .container{
@@ -394,8 +397,13 @@ header{
                 }
                 @include respond-from("lg"){
                   width: 50%;
-                  margin: 2vw auto 2vw;
+                  margin: 2vw 1vw 2vw;
                 }
+            }
+            .text-area{
+              @include respond-from("md"){
+                margin-top: -10vw;
+              }
             }
         }
 
@@ -435,7 +443,7 @@ header{
     top: 82%;
   }
   @include respond-from("lg"){
-    top: 81%;
+    top: 72%;
   }
   @include respond-from("xl"){
     top: 72%;
@@ -451,7 +459,8 @@ header{
   }
     }
 }
-.partnership{
+.crito-2{
+  .content{
     .partnership-brands {
       padding-top: 2vw;
       @include respond-from("md"){
@@ -491,13 +500,13 @@ header{
         max-width: 95vw;
       }
     }
-    .partnershipborder{
+    .partnership-border{
       @include respond-from("md"){
       padding: 5vw;
       padding-top: 0;
       }
     }
-      .partnership-model {
+      .partnership-section {
         padding: 5vw;
         @include respond-from("sm"){
           padding: 4vw 4vw 4vw 4vw;
@@ -510,18 +519,52 @@ header{
           border: 1px solid #DAD9D3;
         }
 }    
-.partnership-model-left {
+.textarea-left {
   @include respond-from("md"){
     text-align:left;
+    width: 40%;
+    padding: 2vw;
+  }
+  .center-button-group{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    @include respond-from("sm"){
+      width: 50%;
+      margin: auto;
+    }
+    @include respond-from("md"){
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
   }
   }
-  .partnership-model-right {
+  .textarea-right {
+    @include respond-from("sm"){
+      padding: 5vw;
+    }
     @include respond-from("md"){
     display: grid;
     grid-template-columns: auto auto;
     padding: 2vw;
-    }   
-    .partnership-model-card {
+    width: 60%;
+    text-align: left;
+    } 
+    h3 {
+      font-size: 4vw;
+      font-weight: 700;
+      @include respond-from("sm"){
+        font-size: 3vw;
+      }
+      @include respond-from("md"){
+        font-size: 1.85vw;
+      }
+      @include respond-from("lg"){
+        font-size: 16px;
+      }
+    }  
+    .partnership-section-card {
       padding: 2vw 2vw;
             @include respond-from("md"){
       padding: 2.5vw 1.875vw;
@@ -532,24 +575,11 @@ header{
         width: 2.5vw;
         padding-bottom: 1.5vw;
       }
-      h3 {
-        font-size: 4vw;
-        font-weight: 700;
-        @include respond-from("sm"){
-          font-size: 3vw;
-        }
-        @include respond-from("md"){
-          font-size: 1.85vw;
-        }
-        @include respond-from("lg"){
-          font-size: 16px;
-        }
-      }
-      
+    }
     }
   }
   
-.partnership-model-mobile{
+.partnership-section-mobile{
   display: flex;
   padding: 5vw 0vw;
   @include respond-from("sm"){
@@ -557,9 +587,10 @@ header{
   }
   @include respond-from("md"){
     display: block;
+    padding: 2vw 1vw;
   }
 }
-  .partnership-model-left{
+  .partnership-section-left{
     border: 1px solid #DAD9D3;
     padding: 5vw;
     @include respond-from("md"){
@@ -569,6 +600,11 @@ header{
     }
     @include respond-from("lg"){
       padding: 5vw;
+    }
+    .center-button-group{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
     }
     .btn-yellow{
         width:100%;
@@ -584,16 +620,17 @@ header{
     }
   }
 }
-.aboutcompany{
+.crito-3{
   .container{
     @include respond-from("sm"){
       display: flex;
     }
     @include respond-from("md"){
       padding: 2vw 5vw;
+      padding-bottom: 7vw;
     }
-  .aboutcompany-textbox{
-    background: lightblue;
+  .text-area{
+    background: #BEEBFF;
     padding: 5vw;
     width: 80%;
     z-index: 2;
@@ -628,7 +665,7 @@ header{
         font-size: 16px;
       }
       .orange{
-        color: orange;
+        color: #F94D1C;
         @include respond-from("sm"){
           font-size: 12px;
         }
@@ -643,7 +680,7 @@ header{
       }
     }
   }
-  .aboutcompanypicture{
+  .content-section-pic{
     @include respond-from("sm"){
       width: 50%;
     }
@@ -652,7 +689,7 @@ header{
     }
 
   }
-  .aboutcompanyborder{
+  .content{
     @include respond-from("sm"){
       width: 50%;
     }
@@ -669,16 +706,29 @@ header{
     width: 100%;
   }
 
-  .company-model-left{
+  .company-box-left{
     padding: 5vw;
     @include respond-from("sm"){
       text-align: left;
       padding: 2vw;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    @include respond-from("lg"){
+      padding: 25px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
     p{
       text-align: left;
       @include respond-from("md"){
         padding: 1vw 2vw;
+      }
+      @include respond-from("lg"){
+        padding-bottom: 5vw;
+      }
+      @include respond-from("xl"){
+        padding-bottom: 15px;
       }
     }
     h2{
@@ -702,29 +752,33 @@ header{
     .button-group{
       display: flex;
       flex-direction: column;
+      
       @include respond-from("sm"){
         padding: 0 2vw;
       }
       @include respond-from("md"){
         flex-direction: unset;
+        place-content: space-around;
         padding: 0 2vw;
       }
     }
   }
 }
-.our-services{
+.crito-4{
+  position: relative;
   background-color: #F0EFE9;
   padding-top: 10vw;
-  padding-bottom: 10vw;
+  padding-bottom: 20vw;
+  @include respond-from("sm"){
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
   @include respond-from("md"){
     padding-bottom: 5vw;
   }
   @include respond-from("lg"){
     padding-top: 75px;
     padding-bottom: 15px;
-  }
-  h5, h2{
-    margin: 0px 15px 0px 15px;
   }
   .our-services-boxes{
     background: #fff;
@@ -741,11 +795,9 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #DAD9D3;
   padding: 5vw;
   @include respond-from("sm"){
     padding: 5vw 15vw;
-    background: #fff;
   }
   @include respond-from("md"){
     display: none;
@@ -753,6 +805,9 @@ header{
 }
 .flickity-button, .flickity-prev-next-button{
   display: none;
+}
+.flickity-page-dots {
+  bottom: -35px;
 }
   }
   h3 {
@@ -767,13 +822,18 @@ header{
     @include respond-from("md"){
       font-size: 1.85vw;
       text-align: left;
+      margin: 0;
     }
     @include respond-from("lg"){
       font-size: 16px;
     }
   }
   .box1,.box2,.box3,.box4{
-  
+    @include respond-from("sm"){
+    border: 1px solid #DAD9D3;
+    background: #fff;
+    padding: 10vw;
+    }
     @include respond-from("md"){
     width: 25%;
     padding: 3vw;
@@ -804,11 +864,16 @@ header{
     }
   }
   .box2{
-    @include respond-from("sm"){
+    @include respond-from("md"){
     background: #F9D783;
     }
   }
-  .center-content{
+  .white{
+    @include respond-from("md"){
+  color: white;
+    }
+  }
+  .center-button-group{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -822,11 +887,40 @@ header{
       padding-top: 5vw;
       padding-bottom: 5vw;
     }
+}
+.header-background{
+  position: absolute;
+  top: 86.6%;
+  @include respond-from("sm"){
+    top: 72.6%;
+  }
+  @include respond-from("md"){
+    top: 72.6%;
+    left: 28%;
+  }
+  @include respond-from("lg"){
+    top: 73.6%;
+    left: 51%;
+  }
+  @include respond-from("xl"){
+    top: 74.6%;
+    left: 59%;
+  }
+  @include respond-from("ret"){
+    top: 79.6%;
+    left: 71%;
+  }
+  img{
+    width: 100%;
   }
 }
-.why-choose-us{
+}
+.crito-5{
   padding-top: 10vw;
   padding-bottom: 0vw;
+  @include respond-from("sm"){
+    padding-top: 5vw;
+}
   @include respond-from("md"){
     padding-bottom: 5vw;
   }
@@ -839,8 +933,12 @@ header{
     display: flex;
   }
   .picture{
+    background-color: #F0EFE9;
+    padding: 5vw;
     @include respond-from("md"){
       width: 50%;
+      padding: 0;
+      background-color: transparent;
     }
     .picture-background{
       background-color: #F0EFE9;
@@ -865,7 +963,7 @@ header{
     }
 }
 }
-  .four-things{
+  .four-things-group{
     @include respond-from("md"){
       width: 50%;
     }
@@ -894,9 +992,9 @@ header{
   }
   }
 }
-.project-and-case{
+.crito-6{
   .container{
-    .section-title{
+    .text-area{
       padding-top: 50px;
       padding-bottom: 20px;
       @include respond-from("sm"){
@@ -965,50 +1063,59 @@ header{
         
       }
     }
-    .center-content{
+    .center-button-group{
       display: flex;
       justify-content: center;
       align-items: center;
       padding-top: 10vw;
       padding-bottom: 15vw;
+      @include respond-from("sm"){
+        padding-top: 5vw;
+    padding-bottom: 10vw;
+      }
       @include respond-from("md"){
-        padding-top: 7vw;
+        padding-top: 5vw;
         padding-bottom: 5vw;
       }
     }
   }
 }
-.team-members{
+.crito-7{
   padding-bottom: 10vw;
+  padding-top: 10vw;
   background-color: #F0D082;
   @include respond-from("sm"){
     padding-bottom: 5vw;
     padding-top: 5vw;
   }
-  .experience{
-    .text-section{
+  .content{
+    .carousel {
+      padding-top: 15vw;
+      padding-bottom: 15vw;
+      @include respond-from("sm"){
+        padding-top: 0;
+        padding-bottom: 5vw;
+      }
+    }
+    .textarea{
       @include respond-from("sm"){
         padding-bottom: 5vw;
       }
-      @include respond-from("md"){
-        padding: 0;
-      }
-    }
-    .carousel {
-      padding-top: 15vw;
-      @include respond-from("sm"){
+      .center-button-group{
         padding-top: 5vw;
-      }
-      @include respond-from("md"){
-        padding-top: 0;
-      }
-    }
-    .flex-section{
-      @include respond-from("md"){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
+        text-align: center;
+        @include respond-from("md"){
+          padding-top: 0vw;
+          padding-bottom: 0;
+          padding-left: 5vw;
+          padding-right: 5vw;
+          display: flex;
+          flex-direction: row-reverse;
+          margin-top: -8vw;
+        }
+        @include respond-from("lg"){
+          margin-top: -6vw;
+        }
       }
     }
   }
@@ -1114,13 +1221,23 @@ header{
     display: none;
   }
   .flickity-page-dots {
+    bottom: 30px;
     @include respond-from("sm"){
     bottom: 20px;
     }
+    @include respond-from("md"){
+      bottom: 60px;
+    }
   }
-  .section-box{
+  .testimonial-box{
     padding: 5vw;
     background: #fff;
+    .text-area{
+      text-align: center;
+      h2, h5{
+        text-align: center;
+      }
+    }
     .our-services-boxes{
       @include respond-from("md"){
         display: flex;
@@ -1129,6 +1246,13 @@ header{
       p{
         padding: 0;
         text-align: left;
+        @include respond-from("lg"){
+          font-size: 13px;
+        }
+    }
+    .orange{
+      color: #F94D1C;
+      font-weight: 600;
     }
       h3 {
         font-size: 4vw;
@@ -1149,24 +1273,25 @@ header{
       }
       .box1, .box2, .box3{
         width: 100%;
+        padding: 5vw;
         @include respond-from("md"){
         width: 33%;
+        padding: 1vw 3vw;
         }
       }
-      .star{
+      .star-image{
         padding-bottom: 1vw;
       }
     }
-  }
-  .flex-section{
-    @include respond-from("md"){
-      display: flex;
+
+    .client-picture{
+    width: 100%;
+    .img{
+      width: 100%;
     }
     .client{
       padding: 10px;
-    }
-    .img{
-      width: 100%;
+  }
     }
   }
 
@@ -1214,7 +1339,7 @@ header{
     opacity: 0.8;
   }
 }
-.signup-container{
+.signup-textarea{
   @include respond-from("md"){
   display: flex;
   justify-content: space-around;
@@ -1225,11 +1350,14 @@ header{
     @include respond-from("md"){
       padding-bottom: 0;    }
   }
+  h2{
+    padding-top: 2vw;
+  }
 }
 
 }
 footer {
-    height: 60vw;
+    height: 80vw;
     background-color: #0E1021;
     display: flex;
     flex-direction: column;
@@ -1262,7 +1390,7 @@ footer {
       }
     }
     .footer-links-container {
-      padding: 1vw 1vw;
+      padding: 4vw 1vw;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr auto;
       grid-gap: 2vw;
@@ -1351,7 +1479,7 @@ footer {
     }
     }
   }
-  .letsconnect{
+  .crito-contact-1{
     background-color: #F0EFE9;
     padding-top: 5vw;
     padding-bottom: 15vw;
@@ -1404,7 +1532,7 @@ footer {
     width:100%;
   }
     }
-    .main-menu{
+    .small-main-menu{
       nav{
         a{
             display: inline-block;
@@ -1424,7 +1552,7 @@ footer {
         }
     }
     }
-    .home-section{
+    .text-area{
       h2{
         text-align: center;
         font-family: 'DM Sans', sans-serif;
@@ -1434,7 +1562,7 @@ footer {
     }
     
   }
-  .our-services-contact{
+  .crito-contact-2{
     background-color: #fff;
     padding-top: 10vw;
     padding-bottom: 10vw;
@@ -1504,10 +1632,10 @@ footer {
       }
     }
   }
-  .contactform{
+  .crito-contact-3{
     .container{
       padding-bottom: 5vw;
-    .contact-wrapper{
+    .content{
       padding: 5vw;
       background-color: #F0EFE9;
       text-align: center;
