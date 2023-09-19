@@ -939,26 +939,33 @@ header{
       width: 50%;
       padding: 0;
       background-color: transparent;
+      margin-top: -12vw;
+      @include respond-from("lg"){
+        margin-top: -10vw;
+      }
     }
     .picture-background{
       background-color: #F0EFE9;
       @include respond-from("md"){
         background-color: #F0EFE9;
-        padding: 15vw;
+        padding: 17vw;
         margin-left: -10vw;
-        margin-top: -30vw;
+        margin-top: -22vw;
         margin-right: -9vw;
+        position: relative;
+        z-index: -1;
       }
       @include respond-from("lg"){
         margin-left: -10vw;
-        margin-top: -35vw;
+        margin-top: -20vw;
         margin-right: -12vw;
-      }
+        padding: 13vw;
+    }
       @include respond-from("xl"){
         margin-left: -10vw;
-        margin-top: -22vw;
+        margin-top: -19vw;
         margin-right: -25vw;
-        padding: 10vw;
+        padding: 12vw;
       }
     }
 }
@@ -989,6 +996,14 @@ header{
         font-size: 16px;
       }
     }
+    p{
+      padding: 0;
+    }
+  }
+  i {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 50%;
   }
   }
 }
@@ -1094,7 +1109,7 @@ header{
       padding-bottom: 15vw;
       @include respond-from("sm"){
         padding-top: 0;
-        padding-bottom: 5vw;
+        padding-bottom: 3vw;
       }
     }
     .textarea{
@@ -1173,7 +1188,7 @@ header{
     justify-content: center;
     background-color: #F0D082;
     @include respond-from("md"){
-      padding: 5vw;
+      padding: 3vw;
       padding-top: 0;
     }
     .gallery-image{
@@ -1296,6 +1311,195 @@ header{
   }
 
 }
+.crito-8{
+  padding-bottom: 10vw;
+  padding-top: 10vw;
+  background-color: #fff;
+  @include respond-from("sm"){
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+  }
+  @include respond-from("md"){
+    padding-bottom: 0vw;
+    padding-top: 5vw;
+  }
+  .content{
+    .carousel {
+      padding-top: 15vw;
+      padding-bottom: 15vw;
+      @include respond-from("sm"){
+        padding-top: 0;
+        padding-bottom: 5vw;
+      }
+    }
+    .textarea{
+      @include respond-from("sm"){
+        padding-bottom: 5vw;
+      }
+      .center-button-group{
+        padding-top: 5vw;
+        text-align: center;
+        @include respond-from("md"){
+          padding-top: 0vw;
+          padding-bottom: 0;
+          padding-left: 5vw;
+          padding-right: 0vw;
+          display: flex;
+          flex-direction: row-reverse;
+          margin-top: -8vw;
+        }
+        @include respond-from("lg"){
+          margin-top: -6vw;
+        }
+      }
+    }
+  }
+  .gallery-cell{
+    width: 100%; 
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff !important;
+    @include respond-from("sm"){
+      padding: 5vw 15vw;
+      background: #fff;
+      padding-top: 2vw;
+    }
+    @include respond-from("md"){
+      display: none;
+    }
+    .gallery-image{
+      padding: 5vw;
+      padding-bottom: 0;
+      padding-top:0;
+      background-color: #fff;
+      position: relative;
+      .gallery-date{
+        position: absolute;
+        top: 3%;
+        left: 8%;
+        background: #F9D783;
+        padding: 15px;
+        @include respond-from("sm"){
+          top: 4%;
+          left: 11%;
+        }
+      }
+      h3 {
+        font-size: 4vw;
+        font-weight: 700;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+        @include respond-from("sm"){
+          font-size: 3vw;
+        }
+        @include respond-from("md"){
+          font-size: 1.85vw;
+          text-align: left;
+        }
+        @include respond-from("lg"){
+          font-size: 16px;
+        }
+      }
+      p{
+        padding: 0vw;
+        text-align: left;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .gallery-cell-dt{
+    width: 100%; 
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    @include respond-from("md"){
+      padding: 0vw;
+      padding-top: 0;
+    }
+    .gallery-image{
+      background-color: #fff;
+      position: relative;
+@include respond-from("md"){
+  padding: 1vw;
+}
+.gallery-date{
+  @include respond-from("md"){
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    background: #F9D783;
+    padding: 12px;
+  }
+  @include respond-from("lg"){
+    top: 8%;
+    left: 8%;
+    padding: 12px;
+  }
+  @include respond-from("xl"){
+    top: 10%;
+    left: 10%;
+  }
+}
+      h3 {
+        font-size: 4vw;
+        font-weight: 700;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+        @include respond-from("sm"){
+          font-size: 3vw;
+        }
+        @include respond-from("md"){
+          font-size: 1.85vw;
+          text-align: left;
+        }
+        @include respond-from("lg"){
+          font-size: 16px;
+        }
+      }
+      p{
+        padding: 0vw;
+        text-align: left;
+        padding-top: 5px;
+        color: #191919;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .carousel.is-fullscreen .gallery-cell-dt
+{
+  height: 100%;
+}
+
+.gallery-cell img
+{
+  display: block;
+  max-height: 100%;
+}
+  .flickity-button, .flickity-prev-next-button{
+    display: none;
+  }
+  .flickity-page-dots {
+    bottom: 30px;
+    @include respond-from("sm"){
+    bottom: 20px;
+    }
+    @include respond-from("md"){
+      bottom: 60px;
+    }
+  }
+
+}
+
 .signup-section{
   background-color: #F0EFE9;
   .signupform{
@@ -1374,7 +1578,7 @@ footer {
     h3,
     a,
     p {
-      color: #666666;
+      color: #fff;
       font-size: 12px;
     }
     h3{
