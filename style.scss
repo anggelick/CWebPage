@@ -128,18 +128,24 @@ $breakpoints: (
             text-align: left;
             padding: 1vw 0vw;
         }
+        @include respond-from("lg"){
+          padding: 1vw 0;
+        }
     }
 
     .fa-regular, .fa-solid{
       font-size: 5vw;
       @include respond-from("sm"){
-        font-size: 3vw;
+        font-size: 2vw;
       }
       @include respond-from("md"){
         font-size: 2vw;
       }
       @include respond-from("lg"){
         font-size: 1vw;
+      }
+      @include respond-from("xl"){
+        font-size: 0.8vw;
       }
     }
 
@@ -338,7 +344,10 @@ header{
               font-size: 1.5vw;
             }
             @include respond-from("lg"){
-              font-size: 1vw;
+              font-size: 0.9vw;
+            }
+            @include respond-from("lg"){
+              font-size: 0.8vw;
             }
         }
 
@@ -410,12 +419,15 @@ header{
         p{
           @include respond-from("md"){
             padding: 3vw 0;
+            padding-bottom: 5vw;
           }
           @include respond-from("lg"){
             padding: 2vw 0;
+            padding-bottom: 5vw; 
           }
           @include respond-from("xl"){
             padding: 1vw 0;
+            padding-bottom: 3vw;
           }
         }
         
@@ -502,7 +514,7 @@ header{
     }
     .partnership-border{
       @include respond-from("md"){
-      padding: 5vw;
+      padding: 0vw;
       padding-top: 0;
       }
     }
@@ -525,6 +537,9 @@ header{
     width: 40%;
     padding: 2vw;
   }
+  @include respond-from("xl"){
+    width: 50%;
+  }
   .center-button-group{
     display: flex;
     width: 100%;
@@ -541,6 +556,7 @@ header{
   }
   }
   .textarea-right {
+    padding-top: 10vw;
     @include respond-from("sm"){
       padding: 5vw;
     }
@@ -548,7 +564,7 @@ header{
     display: grid;
     grid-template-columns: auto auto;
     padding: 2vw;
-    width: 60%;
+    width: 75%;
     text-align: left;
     } 
     h3 {
@@ -564,6 +580,9 @@ header{
         font-size: 16px;
       }
     }  
+    p{
+      color: #191919;
+    }
     .partnership-section-card {
       padding: 2vw 2vw;
             @include respond-from("md"){
@@ -587,7 +606,7 @@ header{
   }
   @include respond-from("md"){
     display: block;
-    padding: 2vw 1vw;
+    padding: 1vw 1vw;
   }
 }
   .partnership-section-left{
@@ -621,6 +640,15 @@ header{
   }
 }
 .crito-3{
+  @include respond-from("sm"){
+    padding-bottom: 5vw;
+  }
+  @include respond-from("lg"){
+    padding-bottom: 2vw;
+  }
+  @include respond-from("ret"){
+    padding-bottom: 0;
+  }
   .container{
     @include respond-from("sm"){
       display: flex;
@@ -628,6 +656,7 @@ header{
     @include respond-from("md"){
       padding: 2vw 5vw;
       padding-bottom: 7vw;
+      padding-top: 5vw;
     }
   .text-area{
     background: #BEEBFF;
@@ -649,6 +678,11 @@ header{
       padding: 2vw;
       margin-left: -6vw;
       margin-top: -14vw;
+    }
+    @include respond-from("xl"){
+      padding: 1vw;
+      margin-left: -2vw;
+      margin-top: -9vw;
     }
     h3{
       font-size: 4vw;
@@ -675,6 +709,7 @@ header{
       font-style: italic;
       padding-right: 15vw;
       text-align: left;
+      font-size: 12px;
       @include respond-from("sm"){
         padding: 0;
       }
@@ -715,11 +750,13 @@ header{
       padding-bottom: 0;
     }
     @include respond-from("lg"){
-      padding: 25px;
+      padding: 0px 0px;
+      padding-left: 60px;
       padding-top: 0;
       padding-bottom: 0;
     }
     p{
+      color: #191919;
       text-align: left;
       @include respond-from("md"){
         padding: 1vw 2vw;
@@ -760,6 +797,15 @@ header{
         flex-direction: unset;
         place-content: space-around;
         padding: 0 2vw;
+      }
+    }
+    .play-button {
+      margin-top: 2vw;
+      @include respond-from("md"){
+        margin-top: 0;
+      }
+      i{
+        margin-right: 8px;
       }
     }
   }
@@ -810,24 +856,29 @@ header{
   bottom: -35px;
 }
   }
-  h3 {
-    font-size: 4vw;
-    font-weight: 700;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-align: center;
-    @include respond-from("sm"){
-      font-size: 3vw;
-    }
+  .text-area{
     @include respond-from("md"){
-      font-size: 1.85vw;
-      text-align: left;
-      margin: 0;
+    margin: 0px 15px 0px 15px;
     }
-    @include respond-from("lg"){
-      font-size: 16px;
-    }
+}
+h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  @include respond-from("sm"){
+    font-size: 3vw;
   }
+  @include respond-from("md"){
+    font-size: 1.85vw;
+    text-align: left;
+    margin: 0;
+  }
+  @include respond-from("lg"){
+    font-size: 16px;
+  }
+}
   .box1,.box2,.box3,.box4{
     @include respond-from("sm"){
     border: 1px solid #DAD9D3;
@@ -843,6 +894,10 @@ header{
     @include respond-from("lg"){
       padding: 2vw;
     }
+    @include respond-from("xl"){
+      padding: 1.5vw;
+      padding-top: 0;
+    }
     .round-arrow{
       text-align: right;
     }
@@ -853,7 +908,7 @@ header{
         font-size: 5vw;
       }
       @include respond-from("md"){
-        font-size: 3vw;
+        font-size: 2vw;
       }
       @include respond-from("lg"){
         font-size: 45px;
@@ -984,9 +1039,10 @@ header{
       font-weight: 700;
       padding-top: 0px;
       padding-bottom: 0px;
-      text-align: center;
+      text-align: left;
       @include respond-from("sm"){
         font-size: 3vw;
+        text-align: center;
       }
       @include respond-from("md"){
         font-size: 1.85vw;
@@ -998,12 +1054,25 @@ header{
     }
     p{
       padding: 0;
+      color: #191919;
+      text-align: left;
+      @include respond-from("sm"){
+        margin-left: 60px;
+        text-align: center;
+      }
+      @include respond-from("md"){
+        text-align: left;
+      }
+      @include respond-from("lg"){
+        margin-left: 50px;
+      }
     }
   }
   i {
     border: 1px solid lightgray;
     padding: 10px;
     border-radius: 50%;
+    margin-right: 10px;
   }
   }
 }
@@ -1190,11 +1259,13 @@ header{
     @include respond-from("md"){
       padding: 3vw;
       padding-top: 0;
+      padding-left: 0;
     }
     .gallery-image{
       background-color: #F0D082;
-@include respond-from("md"){
+  @include respond-from("md"){
   padding: 1vw;
+  padding-left: 0;
 }
       h3 {
         font-size: 4vw;
@@ -1241,12 +1312,18 @@ header{
     bottom: 20px;
     }
     @include respond-from("md"){
-      bottom: 60px;
+      bottom: 45px;
+    }
+    @include respond-from("lg"){
+      bottom: 45px;
     }
   }
   .testimonial-box{
     padding: 5vw;
     background: #fff;
+    @include respond-from("lg"){
+      padding: 2vw;
+    }
     .text-area{
       text-align: center;
       h2, h5{
@@ -1257,6 +1334,11 @@ header{
       @include respond-from("md"){
         display: flex;
         justify-content: center;
+      }
+      .flex-section{
+        @include respond-from("md"){
+          display: flex;
+        }
       }
       p{
         padding: 0;
@@ -1297,10 +1379,19 @@ header{
       .star-image{
         padding-bottom: 1vw;
       }
-    }
+      .button-group{
+        @include respond-from("md"){
+          padding-bottom: 2vw;
+        }
+      }
+  }
+  }
 
     .client-picture{
     width: 100%;
+    @include respond-from("md"){
+      width: 33%;
+    }
     .img{
       width: 100%;
     }
@@ -1308,7 +1399,7 @@ header{
       padding: 10px;
   }
     }
-  }
+  
 
 }
 .crito-8{
@@ -1335,6 +1426,9 @@ header{
     .textarea{
       @include respond-from("sm"){
         padding-bottom: 5vw;
+      }
+      @include respond-from("lg"){
+        padding-bottom: 2vw;
       }
       .center-button-group{
         padding-top: 5vw;
@@ -1428,6 +1522,7 @@ header{
       position: relative;
 @include respond-from("md"){
   padding: 1vw;
+  padding-left: 0;
 }
 .gallery-date{
   @include respond-from("md"){
@@ -1494,7 +1589,10 @@ header{
     bottom: 20px;
     }
     @include respond-from("md"){
-      bottom: 60px;
+      bottom: 35px;
+    }
+    @include respond-from("lg"){
+      bottom: 50px;
     }
   }
 
@@ -1502,6 +1600,8 @@ header{
 
 .signup-section{
   background-color: #F0EFE9;
+  position: relative;
+  .container{
   .signupform{
     padding: 5vw;
   input[type=text], .input[type=submit] {
@@ -1558,15 +1658,47 @@ header{
     padding-top: 2vw;
   }
 }
+.header-picture-background{
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  width: 25%;
+  @include respond-from("sm"){
+    top: 75%;
+    left: 86%;
+    width: 15%;
+  }
+  @include respond-from("md"){
+    top: 55%;
+    left: 93%;
+    width: 10%;
+  }
+  @include respond-from("lg"){
+    top: 50%;
+    left: 91%;
+    width: 10%;
+  }
+  @include respond-from("xl"){
+    left: 92%;
+  }
+  @include respond-from("ret"){
+    left: 91%;
+  }
+  img{
+    width: 100%;
+  }
+}
+}
 
 }
 footer {
-    height: 80vw;
+    height: 100vw;
     background-color: #0E1021;
     display: flex;
     flex-direction: column;
+    position: relative;
   @include respond-from("sm"){
-    height: 40vw;
+    height: 55vw;
   }
   @include respond-from("md"){
     height: 32vw;
@@ -1598,6 +1730,7 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr auto;
       grid-gap: 2vw;
+      padding-bottom: 20vw;
       @include respond-from("sm"){
         padding: 4vw 1vw;
       }
@@ -1610,10 +1743,15 @@ footer {
     &::after{
         display: none;
     }
+    
   
       .footer-content {
         display: flex;
         flex-direction: column;
+        @include respond-from("md"){
+        justify-content: space-evenly;
+        align-items: flex-start;
+        }
         &:last-child {
           padding-right: 0vw;
         }
@@ -1624,13 +1762,13 @@ footer {
           }
         }
         a {
-          line-height: 4.5vw;
+          line-height: 5.5vw;
           text-decoration: none;
           font-weight: 500;
           @include respond-from("sm"){
-            line-height: 2.5vw;
+            line-height: 4.5vw;
           }
-          @include respond-from("lg"){
+          @include respond-from("md"){
             line-height: 1.5vw;
           }
           &:hover {
@@ -1682,29 +1820,60 @@ footer {
         }
     }
     }
+    .header-picture3{
+      position: absolute;
+      top: 55%;
+      left: 40%;
+      width: 60%;
+      @include respond-from("sm"){
+        top: 45%;
+    left: 80%;
+    width: 20%;
+      }
+      @include respond-from("md"){
+        top: 49%;
+    left: 80%;
+    width: 20%;
+      }
+      @include respond-from("lg"){
+        top: 44%;
+    left: 81%;
+      }
+      @include respond-from("xl"){
+        top: 39%;
+      }
+      @include respond-from("ret"){
+        top: 35%;
+      }
+      img{
+        width: 100%;
+      }
+    }
   }
   .crito-contact-1{
     background-color: #F0EFE9;
     padding-top: 5vw;
     padding-bottom: 15vw;
+    position: relative;
     @include respond-from("md"){
       padding-bottom: 5vw;
     }
     .header-picture{
       position: absolute;
-  top: 15%;
+  top: 41%;
   left: 0;
   @include respond-from("sm"){
     top: 10%;
   }
   @include respond-from("md"){
-    top: 12%;
+    top: 30%;
+    width: 50%;
   }
   @include respond-from("lg"){
-    top: 16%;
+    top: 25%;
   }
   @include respond-from("xl"){
-    top: 17%;
+    top: 25%;
   }
   @include respond-from("ret"){
     top: 19%;
@@ -1827,7 +1996,7 @@ footer {
           font-size: 5vw;
         }
         @include respond-from("md"){
-          font-size: 3vw;
+          font-size: 2vw;
         }
         @include respond-from("lg"){
           font-size: 45px;
